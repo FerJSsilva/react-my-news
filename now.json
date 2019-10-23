@@ -1,7 +1,4 @@
 {
-  "env": {
-    "REACT_APP_NEWS_API_KEY": "@news-api-key"
-  },
   "build": {
     "env": {
       "REACT_APP_NEWS_API_KEY": "@news-api-key"
