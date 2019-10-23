@@ -10,6 +10,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <span>{process.env.REACT_APP_NEWS_API_KEY}</span>
         <a
           className="App-link"
           href="https://reactjs.org"
