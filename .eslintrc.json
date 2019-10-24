@@ -28,6 +28,7 @@
     "react/jsx-uses-vars": "error",
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/prefer-stateless-function": [1, { "ignorePureComponents": true }],
+    "react/state-in-constructor": [0],
     "no-console": ["warn", { "allow": ["warn", "error"] }],
     "linebreak-style": 0
   }

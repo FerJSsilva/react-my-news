@@ -10,10 +10,25 @@ class Header extends Component {
     onFetchSources();
   }
 
-  render() {
+  renderNews() {
     const { sources } = this.props;
+    const { content } = sources;
 
-    console.log(sources);
+    if (content) {
+      return sources.ids.map((sourceId) => (
+        <option
+          key={content[sourceId].id}
+          value={content[sourceId].id}
+        >
+          {content[sourceId].name}
+        </option>
+      ));
+    }
+
+    return null;
+  }
+
+  render() {
     return (
       <div className="header">
         <h1 className="title">Notícias</h1>
@@ -21,10 +36,7 @@ class Header extends Component {
           <option value="none">
             Filtrar por fonte
           </option>
-          <option value="blasting-news">Blasting News</option>
-          <option value="globo">Globo</option>
-          <option value="google-news-br">Google News Brasil</option>
-          <option value="info-money">Info Money</option>
+          {this.renderNews()}
         </select>
       </div>
     );

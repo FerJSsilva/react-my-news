@@ -1,19 +1,36 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const News = () => (
+const News = ({
+  headline, link, source, date,
+}) => (
   <div className="news">
-    <a className="news-headline" href="http://google.com" target="blank">
-      Manchete 1
+    <a className="news-headline" href={link} target="blank">
+      {headline}
     </a>
     <div className="news-info">
       <div className="news-date">
-        <span>16/10/2018</span>
+        <span>{date}</span>
       </div>
       <div className="news-source">
-        <span>Fonte A</span>
+        <span>{source}</span>
       </div>
     </div>
   </div>
 );
+
+News.propTypes = {
+  headline: PropTypes.string,
+  link: PropTypes.string,
+  source: PropTypes.string,
+  date: PropTypes.string,
+};
+
+News.defaultProps = {
+  headline: 'Unavailable Headline',
+  link: 'Unavailable Link',
+  source: 'Unavailable Source',
+  date: 'Unavailable Date',
+};
 
 export default News;
