@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 
 const News = ({
   headline, link, source, date,
@@ -10,7 +11,7 @@ const News = ({
     </a>
     <div className="news-info">
       <div className="news-date">
-        <span>{date}</span>
+        <span>{moment(date).format('DD/MM/YYYY')}</span>
       </div>
       <div className="news-source">
         <span>{source}</span>
