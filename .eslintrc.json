@@ -16,6 +16,7 @@
     "linkComponents": ["Hyperlink", { "name": "Link", "linkAttribute": "to" }]
   },
   "globals": { "Atomics": "readonly", "SharedArrayBuffer": "readonly" },
+  "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": { "jsx": true },
     "ecmaVersion": 2018,
