@@ -64,18 +64,6 @@ yarn build
 
 To contribute please send a Pull Request following the pattern of commits of this project.
 
-
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project. Sample:
-
 ```CLI
 feature: add new component
 ```
