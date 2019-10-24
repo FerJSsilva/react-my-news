@@ -28,7 +28,7 @@ export function fetchNewsBySource(sourceId) {
   return async (dispatch) => {
     try {
       dispatch(startLoading());
-      const response = await dataSource.get(`${SERVICE_HTTP_ADDRESS}/everything?sources=${sourceId}&language=br&apiKey=${APP_NEWS_API_KEY}`);
+      const response = await dataSource.get(`${SERVICE_HTTP_ADDRESS}/everything?sources=${sourceId}&apiKey=${APP_NEWS_API_KEY}`);
       dispatch(finishLoading());
       dispatch(updateNews(response.articles));
     } catch (exception) {
